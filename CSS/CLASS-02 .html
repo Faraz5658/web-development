@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{float: left;}
+        .box1{width: 100px; height: 100px; background-color: aquamarine; color: blue; text-align: center; line-height: 100px; transition: all 0.7s linear; margin: 10px;}
+        .box1:hover{transform: rotate(180deg);}
+
+        .box2{width: 100px; height: 100px; background-color: rgb(128, 23, 93); color: rgb(131, 131, 177); text-align: center; line-height: 100px; transition: all 0.7s linear; margin: 10px; }
+        .box2:hover{transform: rotateX(180deg);}
+
+        .box3{width: 100px; height: 100px; background-color: rgb(214, 0, 0); color: rgb(20, 20, 189); text-align: center; line-height: 100px; transition: all 0.7s linear; margin: 10px;}
+        .box3:hover{transform: rotateY(180deg);}
+
+        .box4{width: 100px; height: 100px; background-color: rgb(128, 23, 93); color: rgb(150, 193, 65); text-align: center; line-height: 100px; transition: all 0.7s linear; margin: 10px;}
+        .box4:hover{transform: rotateZ(180deg);}
+        
+        .box5{width: 100px; height: 100px; background-color: rgb(5, 246, 246); color: rgb(150, 193, 65); border: 10px red solid;}
+        .door{ width: 100px; height: 100px; background-color: brown; margin: 0; transition: all 1s linear; transform-origin: left ;}
+        .box5:hover .door{transform: perspective(200px) rotateY(40deg); }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box1">FARAZ</div>
+    <div class="box2">FARAZ</div>
+    <div class="box3">FARAZ</div>
+    <div class="box4">FARAZ</div>
+    <div class="box5">
+        <div class="door"></div>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="front">front</div>
+            <div class="back">back</div>
+        </div>
+    </div>
+</body>
+</html>
