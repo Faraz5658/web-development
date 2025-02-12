@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter student data</title>
+    <script>
+        function show() {
+            var name = prompt("Enter Name:");
+            var age = prompt("Enter Age:");
+            var em = ("   ");
+            var engMarks = (prompt("Enter English Marks:"));
+            var urduMarks = (prompt("Enter Urdu Marks:"));
+            var mathsMarks = (prompt("Enter Maths Marks:"));
+            var sstMarks = (prompt("Enter SST Marks:"));
+
+            var totalMarks = Number(engMarks) + Number(urduMarks )+Number( mathsMark) + Number(sstMarks);
+            var percentage = (totalMarks / 400) * 100;
+
+            var result = `Name: ${name}\nAge: ${age}\nENG: ${engMarks}${em}URDU: ${urduMarks}${em}MATHS: ${mathsMarks}${em}SST: ${sstMarks}\nTotal Marks: ${totalMarks}\nPercentage: ${percentage}%`;
+            alert(result);
+        }
+    </script>
+</head>
+<body >
+    <button onclick="show()">ENTER DATA</button>
+</body>
+</html>
