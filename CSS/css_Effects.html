@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {height: 200px; width: 150px; background: url(image/view.jpeg); background-size: cover; position: relative; overflow: hidden;}
+        .txt1 {height: 200px; width: 150px; background: red; color: white; text-align: center; line-height: 200px; font-family: verdana; position: absolute; left: 150px; top: -20px;  transition: all 0.5s linear;}
+        .box1:hover .txt1 {left: 0px;}
+
+        .box2 {height: 200px; width: 150px; border: 2px solid red; overflow: hidden;}
+        .tunnel1 {height: 200px; width: 300px; border: 2px solid brown;}
+        .layer1 {height: 200px; width: 150px; background: red; color: white; font-family: arial black; font-size: 2em; text-align: center; line-height: 200px; float: left; transition: all 0.5s linear;}
+        .layer2 {height: 200px; width: 150px; background: green; color: white; font-family: arial black; font-size: 2em; text-align: center; line-height: 200px; float: left;}
+        .box2:hover .layer1 {margin-left: -150px;}
+
+        .box3 {height: 300px; width: 250px; overflow: hidden;}
+        .box3 img {height: 300px; width: 250px; transition: all 0.5s linear;}
+        .box3:hover img {transform:rotate(25deg) scale(2);}
+
+        .box4 {height: 250px; width: 200px; border: 2px solid red; background: url(image/view2.jpg); position: relative; overflow: hidden;}
+        .box4 h2 {height: 50px; width: 200px; background: black; color: white; font-family: corbel; font-size: 2em; text-align: center; line-height: 50px; position: absolute; top: 200px; transition: all 0.5s linear; opacity: 0;}
+        .box4:hover h2 {top: 50px; opacity: 1;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+        </nav>
+    </header>
+    <section>
+        <article>
+            <div class="box1">
+                <h2 class="txt1">ITSAWK</h2>
+            </div>
+            <div class="box2">
+                <div class="tunnel1">
+                    <div class="layer1">LAYER1</div>
+                    <div class="layer2">LAYER2</div>
+                </div>
+            </div>
+            <div class="box3">
+                <img src="image/1.webp" />
+            </div>
+            <div class="box4">
+                <h2>ITSAWK</h2>
+            </div>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+</html>

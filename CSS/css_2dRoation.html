@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {height: 200px; width: 200px; background: linear-gradient(yellow,red); text-aling: center; line-height: 200px; font-size: 3em; font-family: verdana; transition: all 0.5s linear; margin: 30px; }
+        .box1:hover {transform: rotate(45deg);}
+        
+        .box2 {height: 200px; width: 200px; background: lime; text-aling: center; line-height: 200px; font-size: 3em; font-family: verdana; transition: all 0.5s linear; margin: 30px;}
+        .box2:hover {transform: rotateY(180deg);}
+        
+        .box3 {height: 200px; width: 200px; background: crimson; text-aling: center; line-height: 200px; font-size: 3em; font-family: verdana; transition: all 2s linear; margin: 30px;}
+        .box3:hover {transform:perspective(300px) rotateY(180deg);}
+
+        .box4 {height: 300px; width: 250px; border-top: 20px solid brown; border-left: 20px solid brown; border-right: 20px solid brown;}
+        .door {height: 300px; width: 250px; background: gold; transition: all 1s linear; transform-origin: left;}
+        .box4:hover .door {transform:perspective(300px) rotateY(45deg);}
+
+        .main {height: 300px; width: 250px; position: relative; perspective: 500px;}
+        .card {height: 300px; width: 250px; position: absolute; transition: all 1s linear; transform-style: preserve-3d;}
+        .back {height: 300px; width: 250px; background: red; color: white; font-family: arial black; font-size: 3em; text-align: center; line-height: 300px; position: absolute; transform: rotateY(180deg);}
+        .front {height: 300px; width: 250px; background: green; color: white; font-family: arial black; font-size: 3em; text-align: center; line-height: 300px; position: absolute; backface-visibility: hidden;}
+        .main:hover .card {transform: rotateY(180deg);}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+        <article>
+            <div class="box1">ITSAWK</div>
+            <div class="box2">ITSAWK</div>
+            <div class="box3">ITSAWK</div>
+            <div class="box4">
+                <div class="door"></div>
+            </div>
+            <div class="main">
+                <div class="card">
+                    <div class="back">BACK</div>
+                    <div class="front">FRONT</div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+</html>

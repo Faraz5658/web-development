@@ -1,0 +1,157 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {color: red;}
+            .main p {font-family: verdana; font-size: 20px;}
+            .main > p {background: black; color: white;}
+            .main + p {background: red; color: white;}
+            h2 ~ p {background: orange; color: black;}
+
+            .list1 {list-style: none;}
+            .list1 li:before {content: '+'; font-size: 20px; font-weight: bold;}
+            
+            .list2 {list-style: none;}
+            .list2 li:before {content: '\1f449'; font-size: 20px; font-weight: bold;}
+            
+            .list3 {list-style: none;}
+            .list3 li:before {content: '😍'; font-size: 20px; font-weight: bold;}
+            
+            .list4 {list-style: none;}
+            .list4 li {background: orange; height: 30px; width: 300px; text-align: center; line-height: 30px; margin-top: 5px; font-family: corbel; font-weight: bold;}
+            .list4 li:hover {background: crimson; color: white;}
+            
+            .list5 {list-style: none;}
+            .list5 li:first-child {background: teal; color: white; height: 30px; width: 300px; text-align: center; line-height: 30px; margin-top: 5px; font-family: corbel; font-weight: bold;}
+
+            .list5 li:last-child {background: crimson; color: white; height: 30px; width: 300px; text-align: center; line-height: 30px; margin-top: 5px; font-family: corbel; font-weight: bold;}
+            
+            .list5 li:nth-child(4) {background: darkgreen; color: white; height: 30px; width: 300px; text-align: center; line-height: 30px; margin-top: 5px; font-family: corbel; font-weight: bold;}
+            
+
+            .list6 {list-style: none;}
+            .list6 li:nth-child(odd) {background: black; color: white; height: 30px; width: 300px; text-align: center; line-height: 30px; font-family: corbel; font-weight: bold;}
+            .list6 li:nth-child(even) {background: lightgray; color: black; height: 30px; width: 300px; text-align: center; line-height: 30px; font-family: corbel; font-weight: bold;}
+
+            .mylink {font-family: verdana; }
+            .mylink:hover {background: red; color: white;}
+            .mylink:focus {background: black; color: white;}
+
+            input[type="text"] {background: yellow; color: red;}
+
+            .para1::first-line {background: orange; color: white;}
+            .para1::first-letter {font-family: verdana; font-size: 3em; color: black;}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="para1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dignissimos modi alias ea quos iure officia laboriosam, dicta excepturi quisquam nemo voluptate iste rem dolore laborum dolor? Dolore, suscipit exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat obcaecati soluta commodi corporis sed, facere sit ea veritatis, nostrum debitis quas perferendis provident fugit eaque delectus quibusdam! Cumque, sit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cumque cum a, harum ad, repudiandae, quidem iste ipsum accusantium nostrum expedita! Corrupti voluptatibus non excepturi aliquam, sed in dolorum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quas placeat vitae officiis esse hic laudantium voluptatum possimus molestiae voluptatem vero quaerat, assumenda dolores magnam blanditiis maiores! Animi, dolores velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat nisi consequuntur eum. Doloremque sed inventore aliquid! Qui eligendi sint enim beatae, natus a ducimus ipsum ea, delectus ipsa sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. At tenetur distinctio eum voluptates labore libero enim molestiae quas fuga accusantium sit error assumenda eos est repudiandae iusto fugiat, officia perspiciatis.
+            </p>
+            <label>FIRSTNAME: </label><input type="text" /><br />
+            <label>LASTNAME: </label><input type="text" /><br />
+            <label>EMAIL: </label><input type="email" /><br />
+            <label>PASSWORD: </label><input type="password" /><br />
+        </header>
+        <section>
+            <article>
+                <a class="mylink" href="">LINK</a>
+            </article>
+            <article>
+                <ul class="list1">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+                <ul class="list2">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+                <ul class="list3">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+                <ul class="list4">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+                <ul class="list5">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+                <ul class="list6">
+                    <li> Computer </li>
+                    <li> Tablet </li>
+                    <li> Smartphone </li>
+                    <li> Smartwatch </li>
+                    <li> iPOD </li>
+                    <li> VR </li>
+                    <li> DigiCAM </li>
+                    <li> Printer </li>
+                </ul>
+            </article>
+            <article>
+                <div class="main">
+                    <p> First paragraph </p>
+                    <p> second paragraph </p>
+                    <p> third paragraph </p>
+                    <div class="sub">
+                        <p> First nested Paragraph</p>
+                        <p> second nested Paragraph</p>
+                        <p> third nested Paragraph</p>
+                    </div>
+                </div>
+                <p> First External Paragraph</p>
+                <p> second External Paragraph</p>
+                <p> Third External Paragraph</p>
+            </article>
+        </section>
+        <aside>
+            <p> First Sidebar Paragraph </p>
+            <p> second Sidebar Paragraph </p>
+            <p> third Sidebar Paragraph </p>
+        </aside>
+        <footer>
+            <p> First Paragraph on Footer </p>
+            <p> second Paragraph on Footer </p>
+            <p> Third Paragraph on Footer </p>
+            <h2> First heading of Footer</h2>
+            <p> Fourth Paragraph on Footer </p>
+            <p> Fifth Paragraph on Footer </p>
+            <p> Sixth Paragraph on Footer </p>
+        </footer>   
+    </body>
+    </html>
