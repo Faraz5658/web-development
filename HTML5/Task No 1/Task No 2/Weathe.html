@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        h1{background-color: black; color: #ddd; text-align: center; height: 80px; line-height:80px ;}
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th .date{background-color: cornflowerblue; color: darkorange;}
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: whitesmoke;color: blue;
+        }
+        tr:nth-child(even) {
+            background-color: yellow; color: red;
+        }
+        tr:hover {
+            background-color: #f1f1f1; color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Weather Forecast</h1>
+    <table>
+        <thead>
+            <tr class="date">
+                <th colspan="5">Date 08-AUG-2024 to 14-AUG-2024</th>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Condition</th>
+                <th>High Temp (°C)</th>
+                <th>Low Temp (°C)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08-AUG-2024</td>   
+                <td>Thursday</td>               
+                <td>Cloudy</td>           
+                <td>34</td>           
+                <td>26</td>           
+            </tr>                    
+            <tr>
+                <td>09-AUG-2024</td>
+                <td>Friday</td>
+                <td>Rain Showers 20%</td>
+                <td>35</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>10-AUG-2024</td>
+                <td>Saturday</td>
+                <td>Rain Showers 60%</td>
+                <td>36</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>11-AUG-2024</td>
+                <td>Sunday</td>
+                <td>Rain Showers 40%</td>
+                <td>34</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>12-AUG-2024</td>
+                <td>Monday</td>
+                <td>Rain Showers 60%</td>
+                <td>36</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>13-AUG-2024</td>
+                <td>Tuesday</td>
+                <td>Rain Showers 60%</td>
+                <td>36</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>14-AUG-2024</td>
+                <td>Wednesday</td>
+                <td>partiy cloudy</td>
+                <td>36</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
