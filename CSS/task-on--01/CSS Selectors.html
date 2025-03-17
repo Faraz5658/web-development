@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <style>
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { font-family: Arial, sans-serif; line-height: 2; }
+
+        h1 {background-color: #333; color: blanchedalmond; text-align: center;}
+
+        h2 { color: #555;}
+
+        .farz { font-size: 1.2em; color: pink;background-color: #3f0707; }
+
+        .sub {  background-color: #007bff;  color: #740c00;  font-weight: bold; margin-left: 10px;}
+
+        #main {  padding: 20px;  background-color: #f9f9f9; }
+
+        ul > li {list-style-type: circle; margin: 5px 0; }
+
+        h3 + p { margin-top: 0; background-color: black;color: wheat; }
+
+        h2 ~ p { color: crimson; }
+ 
+        a { color: #3498db; text-decoration: none; }
+
+        a:hover {text-decoration: underline; color: magenta;  }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FARAZ AHMAD</h1>
+        <p class="farz">2nd semester student of computer science from
+            Agriculture university peshawar</p>
+    </header>
+
+    <div id="main">
+        <h2>About Us</h2>
+        <p>This is information about us.</p>
+        <p class="sub">In their 2nd semester, the computer science student
+            acquired introductory skills in C++ programming,
+            mastering basic syntax and concepts. They also
+            developed proficiency in Microsoft Office applications,
+            including Word, Excel, and PowerPoint, enhancing their
+            ability to create professional documents and
+            presentations. This foundational knowledge equips them
+            for further learning and future endeavors in both
+            programming and office productivity.</p>
+        
+        <h2>Our Services</h2>
+        <p>We offer a variety of services to our clients:</p>
+        <ul>
+            <li>App Development</li>
+            <li>Web Development</li>
+            <li>Development</li>
+        </ul>
+        
+        <h3>Contact Us</h3>
+        <p>linkedin farazahmad-coder:</p>
+        <ul>
+            <li>Email: <a href="mailto: fa5658219@gmail.com">xyz@gmail.com</a></li>
+            <li>Phone: <a href="tel:+92 3477593069">+1 (234) 567-89</a></li>
+            <li>BRT ABDARA ROAT STOP</li>
+        </ul>
+    </div>
+</body>
+</html>
