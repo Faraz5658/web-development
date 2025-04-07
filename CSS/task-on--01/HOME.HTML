@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0px; margin: 0px;}
+        .main {height: 550px; width: 100%; background: lightgray; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+        .small {height: 200px; width: 100%; background: gray; display: flex; justify-content: space-evenly; align-items: center;}
+
+        .main img {height: 350px; width: 550px; }
+        .main h2 {font-family: verdana; font-size: 3em;}
+        .small img {height: 170px; width: 250px; border: 2px solid red; transition: all 0.5s ease-in;}
+        .small img:hover {transform: scale(1.1);}
+
+        .box {display: flex; justify-content: center; align-items: center; }
+        button {height: 100px; width: 200px; margin: 20px;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section>
+        <article>
+            <div class="main">
+                <div class="box">
+                    <button onclick="doprev()">PREV</button>
+                    <img id="big" />
+                    <button onclick="donext()">NEXT</button>
+                </div>
+                <h2 id="txt1"></h2>
+            </div>
+            <div id="small" class="small">
+                <!-- <img src="images/Babar azam.jpeg" onclick="doshow(this)" alt="Babar Azam - Pakistani Cricketer"/> -->
+                
+                
+            </div>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+    <script>
+
+        counter = 0;
+
+        var userimages = ["salman.jpg","shahrukh.jpg","tiger.jpg","vidyut.jpg","hrithik.jpg"];
+        var usertext = ["Bollywood Famous Actor","Bollywood King Khan","Bollywood New Face","Bollywood Gym Actor","Bollwoood Stylish Actor"];
+
+        document.getElementById("big").src = "images/"+userimages[0];
+        document.getElementById("big").alt = usertext[0];
+        document.getElementById("txt1").innerText = usertext[0];
+
+        var smallimages = document.getElementById("small");
+
+        for(var i=0; i<userimages.length; i++)
+        {
+            var imgTag = document.createElement("img");
+            imgTag.src = "images/"+userimages[i];
+            var myimg = userimages[i];
+            var imgindex = i;
+            imgTag.alt = usertext[i];
+            var txt = usertext[i];
+            imgTag.onclick = doshow(myimg,txt,i);
+
+            smallimages.appendChild(imgTag);
+        }
+
+        // function test(x)
+        // {
+        //     return function () {
+        //         alert(x);
+        //     }
+        // }
+
+
+        function doshow(x,y,z)
+        {
+            return function (){
+                // alert(z);
+                counter = z;
+                // alert(imageIndex);
+                document.getElementById("big").src = "images/"+x;
+                document.getElementById("txt1").innerText = y;
+            }
+            
+        }
+
+        function donext()
+        {
+            if(counter>=userimages.length-1)
+            {
+                counter = 0;
+                document.getElementById("big").src = "images/"+userimages[counter];
+                document.getElementById("txt1").innerText = usertext[counter];
+            }
+            else
+            {
+                counter++;
+                // alert(imageIndex);
+                document.getElementById("big").src = "images/"+userimages[counter];
+                document.getElementById("txt1").innerText = usertext[counter];
+            }
+            
+        }
+
+        function doprev()
+        {
+            // alert(counter);
+            if(counter<=0)
+            {
+                counter=4;
+                document.getElementById("big").src = "images/"+userimages[counter];
+                document.getElementById("txt1").innerText = usertext[counter];
+            }
+            else
+            {
+                // alert("Working");
+                counter--;
+                // alert(imageIndex);
+                document.getElementById("big").src = "images/"+userimages[counter];
+                document.getElementById("txt1").innerText = usertext[counter];
+            }
+            
+        }
+    </script>
+</body>
+</html>
